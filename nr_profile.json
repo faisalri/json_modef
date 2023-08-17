@@ -1,0 +1,1408 @@
+{
+   "pre_script": [
+      "l mkdir $SITENAME_Execution",
+      "$timeCheck = `date \"+%y%m%d_%H%M%S\"`",
+      "l+ $SITENAME_Execution/$SITENAME_NR_Profile_Exe_$timeCheck.log",
+      "",
+      "gs+",
+      "alt",
+      "",
+      ""
+   ],
+   "mo_parent_group":["UeMC","Mcpc"],
+   "nr_freqband_group":["McpcPSCellProfile","McpcPCellProfile","IntraFreqMCCellProfile","UeMCCellProfile","McfbCellProfile"],
+   "eUtranFrequency_group":["NR_EUtranFrequency","NR_UeMCEUtranFreqRelProfile"],
+   "ssb_group":["NR_ueMCNrFreqRelProfile"],
+   "post_script": [
+      "",
+      "gs-",
+      "",
+      "alt",
+      "l-",
+      "! ~/countbeta2.sh $SITENAME_Execution/$SITENAME_NR_Profile_Exe_$timeCheck.log"
+   ],
+   "script_number": "00a_NR_Profile",
+   "ltefcn_mapping": {
+      "650": "_L2",
+      "675": "_L2",
+      "700": "_L2",
+      "703": "_L2",
+      "1024": "_L2",
+      "1025": "_L2",
+      "1050": "_L2",
+      "1075": "_L2",
+      "1100": "_L2",
+      "1175": "_L2",
+      "2000": "_L4",
+      "2025": "_L4",
+      "2050": "_L4",
+      "2100": "_L4",
+      "2200": "_L4",
+      "2225": "_L4",
+      "2350": "_L4",
+      "2426": "_L5",
+      "2435": "_L5",
+      "2436": "_L5",
+      "2450": "_L5",
+      "2460": "_L5",
+      "2585": "_L5",
+      "2850": "_L7",
+      "2900": "_L7",
+      "2950": "_L7",
+      "3050": "_L7",
+      "3150": "_L7",
+      "3200": "_L7",
+      "3350": "_L7",
+      "5047": "_L12",
+      "5060": "_L12",
+      "5070": "_L12",
+      "5145": "_L12",
+      "5205": "_L13",
+      "5230": "_L13",
+      "5255": "_L13",
+      "5765": "_L17",
+      "5815": "_L17",
+      "8590": "_L25",
+      "8615": "_L25",
+      "8665": "_L25",
+      "66736": "_L66",
+      "66961": "_L66",
+      "68636": "_L71",
+      "68686": "_L71"
+   },
+   "NR_EUtranFrequency":{
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=650":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=650",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=650",
+         "arfcnValueEUtranDl 650",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=675":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=675",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=675",
+         "arfcnValueEUtranDl 675",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=700":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=700",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=700",
+         "arfcnValueEUtranDl 700",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=703":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=703",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=703",
+         "arfcnValueEUtranDl 703",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1024":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1024",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1024",
+         "arfcnValueEUtranDl 1024",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1025":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1025",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1025",
+         "arfcnValueEUtranDl 1025",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1050":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1050",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1050",
+         "arfcnValueEUtranDl 1050",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1075":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1075",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1075",
+         "arfcnValueEUtranDl 1075",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1100":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1100",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1100",
+         "arfcnValueEUtranDl 1100",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1175":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1175",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=1175",
+         "arfcnValueEUtranDl 1175",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2000":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2000",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2000",
+         "arfcnValueEUtranDl 2000",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2025":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2025",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2025",
+         "arfcnValueEUtranDl 2025",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2050":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2050",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2050",
+         "arfcnValueEUtranDl 2050",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2100":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2100",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2100",
+         "arfcnValueEUtranDl 2100",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2200":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2200",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2200",
+         "arfcnValueEUtranDl 2200",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2225":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2225",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2225",
+         "arfcnValueEUtranDl 2225",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2350":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2350",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2350",
+         "arfcnValueEUtranDl 2350",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2426":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2426",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2426",
+         "arfcnValueEUtranDl 2426",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2435":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2435",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2435",
+         "arfcnValueEUtranDl 2435",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2436":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2436",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2436",
+         "arfcnValueEUtranDl 2436",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2450":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2450",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2450",
+         "arfcnValueEUtranDl 2450",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2460":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2460",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2460",
+         "arfcnValueEUtranDl 2460",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2585":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2585",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2585",
+         "arfcnValueEUtranDl 2585",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2850":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2850",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2850",
+         "arfcnValueEUtranDl 2850",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2900":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2900",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2900",
+         "arfcnValueEUtranDl 2900",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2950":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2950",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=2950",
+         "arfcnValueEUtranDl 2950",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=3050":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=3050",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=3050",
+         "arfcnValueEUtranDl 3050",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=3150":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=3150",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=3150",
+         "arfcnValueEUtranDl 3150",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=3200":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=3200",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=3200",
+         "arfcnValueEUtranDl 3200",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=3350":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=3350",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=3350",
+         "arfcnValueEUtranDl 3350",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5047":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5047",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5047",
+         "arfcnValueEUtranDl 5047",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5060":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5060",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5060",
+         "arfcnValueEUtranDl 5060",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5070":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5070",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5070",
+         "arfcnValueEUtranDl 5070",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5145":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5145",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5145",
+         "arfcnValueEUtranDl 5145",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5205":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5205",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5205",
+         "arfcnValueEUtranDl 5205",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5230":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5230",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5230",
+         "arfcnValueEUtranDl 5230",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5255":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5255",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5255",
+         "arfcnValueEUtranDl 5255",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5765":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5765",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5765",
+         "arfcnValueEUtranDl 5765",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5815":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5815",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=5815",
+         "arfcnValueEUtranDl 5815",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=8590":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=8590",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=8590",
+         "arfcnValueEUtranDl 8590",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=8615":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=8615",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=8615",
+         "arfcnValueEUtranDl 8615",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=8665":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=8665",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=8665",
+         "arfcnValueEUtranDl 8665",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=66736":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=66736",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=66736",
+         "arfcnValueEUtranDl 66736",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=66961":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=66961",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=66961",
+         "arfcnValueEUtranDl 66961",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=68636":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=68636",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=68636",
+         "arfcnValueEUtranDl 68636",
+         "userLabel",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=68686":[
+         "pr GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=68686",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,EUtraNetwork=1,EUtranFrequency=68686",
+         "arfcnValueEUtranDl 68686",
+         "userLabel",
+         "end",
+         "fi"
+      ]
+   },
+   "NR_NRFrequency": {
+      "GNBCUCPFunction=1,NRNetwork=1,NRFrequency=124350-15":[
+         "pr GNBCUCPFunction=1,NRNetwork=1,NRFrequency=124350-15",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,NRNetwork=1,NRFrequency=124350-15",
+         "arfcnValueNRDl 124350",
+         "bandListManual ",
+         "smtcDuration 2",
+         "smtcOffset 0",
+         "smtcPeriodicity 20",
+         "smtcScs 15",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,NRNetwork=1,NRFrequency=124370-15":[
+         "pr GNBCUCPFunction=1,NRNetwork=1,NRFrequency=124370-15",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,NRNetwork=1,NRFrequency=124370-15",
+         "arfcnValueNRDl 124370",
+         "bandListManual ",
+         "smtcDuration 2",
+         "smtcOffset 0",
+         "smtcPeriodicity 20",
+         "smtcScs 15",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,NRNetwork=1,NRFrequency=124850-15":[
+         "pr GNBCUCPFunction=1,NRNetwork=1,NRFrequency=124850-15",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,NRNetwork=1,NRFrequency=124850-15",
+         "arfcnValueNRDl 124850",
+         "bandListManual ",
+         "smtcDuration 2",
+         "smtcOffset 0",
+         "smtcPeriodicity 20",
+         "smtcScs 15",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,NRNetwork=1,NRFrequency=125310-15":[
+         "pr GNBCUCPFunction=1,NRNetwork=1,NRFrequency=125310-15",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,NRNetwork=1,NRFrequency=125310-15",
+         "arfcnValueNRDl 125310",
+         "bandListManual ",
+         "smtcDuration 2",
+         "smtcOffset 0",
+         "smtcPeriodicity 20",
+         "smtcScs 15",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,NRNetwork=1,NRFrequency=125400-15":[
+         "pr GNBCUCPFunction=1,NRNetwork=1,NRFrequency=125400-15",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,NRNetwork=1,NRFrequency=125400-15",
+         "arfcnValueNRDl 125400",
+         "bandListManual ",
+         "smtcDuration 2",
+         "smtcOffset 0",
+         "smtcPeriodicity 20",
+         "smtcScs 15",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,NRNetwork=1,NRFrequency=126750-15":[
+         "pr GNBCUCPFunction=1,NRNetwork=1,NRFrequency=126750-15",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,NRNetwork=1,NRFrequency=126750-15",
+         "arfcnValueNRDl 126750",
+         "bandListManual ",
+         "smtcDuration 2",
+         "smtcOffset 0",
+         "smtcPeriodicity 20",
+         "smtcScs 15",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,NRNetwork=1,NRFrequency=152690-15":[
+         "pr GNBCUCPFunction=1,NRNetwork=1,NRFrequency=152690-15",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,NRNetwork=1,NRFrequency=152690-15",
+         "arfcnValueNRDl 152690",
+         "bandListManual ",
+         "smtcDuration 1 ",
+         "smtcOffset 0",
+         "smtcPeriodicity 20",
+         "smtcScs 15",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,NRNetwork=1,NRFrequency=174530-15":[
+         "pr GNBCUCPFunction=1,NRNetwork=1,NRFrequency=174530-15",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,NRNetwork=1,NRFrequency=174530-15",
+         "arfcnValueNRDl 174530",
+         "bandListManual ",
+         "smtcDuration 1 ",
+         "smtcOffset 0",
+         "smtcPeriodicity 20",
+         "smtcScs 15",
+         "end",
+         "fi"
+      ],
+      "GNBCUCPFunction=1,NRNetwork=1,NRFrequency=174970-15":[
+         "pr GNBCUCPFunction=1,NRNetwork=1,NRFrequency=174970-15",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,NRNetwork=1,NRFrequency=174970-15",
+         "arfcnValueNRDl 174970",
+         "bandListManual ",
+         "smtcDuration 1 ",
+         "smtcOffset 0",
+         "smtcPeriodicity 20",
+         "smtcScs 15",
+         "end",
+         "fi"
+      ]
+   },
+   "McpcPSCellProfile": {
+      "GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default": [
+         "pr GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default",
+         "ueConfGroupType 0",
+         "userLabel ",
+         "end",
+         "fi",
+         "",
+         "pr GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default,McpcPSCellProfileUeCfg=Base",
+         "rsrpCandidateA5 hysteresis=10,threshold1=-156,threshold2=-156,timeToTrigger=640",
+         "rsrpCritical hysteresis=10,threshold=-116,timeToTrigger=160",
+         "rsrpCriticalEnabled true",
+         "rsrpSearchZone hysteresis=10,threshold=-156,timeToTrigger=160,timeToTriggerA1=-1",
+         "userLabel ",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default rsrpCritical hysteresis=10,threshold=-120,timeToTrigger=160",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=Default rsrpCriticalEnabled true",
+         "fi",
+         ""
+      ],
+      "GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=N2": [
+         "pr GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=N2",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=N2",
+         "ueConfGroupType 0",
+         "userLabel ",
+         "end",
+         "fi",
+         "",
+         "pr GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=N2,McpcPSCellProfileUeCfg=Base",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=N2,McpcPSCellProfileUeCfg=Base",
+         "rsrpCandidateA5 hysteresis=10,threshold1=-156,threshold2=-156,timeToTrigger=640",
+         "rsrpCritical hysteresis=10,threshold=-116,timeToTrigger=160",
+         "rsrpCriticalEnabled true",
+         "rsrpSearchZone hysteresis=10,threshold=-116,timeToTrigger=160,timeToTriggerA1=-1",
+         "userLabel ",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=N2,McpcPSCellProfileUeCfg=Base rsrpCriticalEnabled true",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=N2,McpcPSCellProfileUeCfg=Base rsrpCritical hysteresis=10,threshold=-116,timeToTrigger=160",
+         "fi",
+         ""
+      ],
+      "GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=ESS71": [
+         "pr GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=ESS71",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=ESS71",
+         "ueConfGroupType 0",
+         "userLabel ",
+         "end",
+         "fi",
+         "",
+         "pr GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=ESS71,McpcPSCellProfileUeCfg=Base",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=ESS71,McpcPSCellProfileUeCfg=Base",
+         "rsrpCandidateA5 hysteresis=10,threshold1=-156,threshold2=-156,timeToTrigger=640",
+         "rsrpCritical hysteresis=10,threshold=-96,timeToTrigger=160",
+         "rsrpCriticalEnabled true",
+         "rsrpSearchZone hysteresis=10,threshold=-100,timeToTrigger=160,timeToTriggerA1=-1",
+         "userLabel ",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=ESS71,McpcPSCellProfileUeCfg=Base rsrpCriticalEnabled true",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=ESS71,McpcPSCellProfileUeCfg=Base rsrpCritical hysteresis=10,threshold=-96,timeToTrigger=160",
+         "fi",
+         ""
+      ],
+      "GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=ESS66": [
+         "pr GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=ESS66",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=ESS66",
+         "ueConfGroupType 0",
+         "userLabel ",
+         "end",
+         "fi",
+         "",
+         "pr GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=ESS66,McpcPSCellProfileUeCfg=Base",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=ESS66,McpcPSCellProfileUeCfg=Base",
+         "rsrpCandidateA5 hysteresis=10,threshold1=-156,threshold2=-156,timeToTrigger=640",
+         "rsrpCritical hysteresis=10,threshold=-116,timeToTrigger=160",
+         "rsrpCriticalEnabled true",
+         "rsrpSearchZone hysteresis=10,threshold=-116,timeToTrigger=160,timeToTriggerA1=-1",
+         "userLabel ",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=ESS66,McpcPSCellProfileUeCfg=Base rsrpCriticalEnabled true",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=ESS66,McpcPSCellProfileUeCfg=Base rsrpCritical hysteresis=10,threshold=-116,timeToTrigger=160",
+         "fi",
+         ""
+      ],
+      "GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=N78": [
+         "pr GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=N78",
+         "if $nr_of_mos = 0 ",
+         "crn GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=N78",
+         "ueConfGroupType 0",
+         "userLabel ",
+         "end",
+         "fi",
+         "",
+         "pr GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=N78,McpcPSCellProfileUeCfg=Base",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=N78,McpcPSCellProfileUeCfg=Base",
+         "rsrpCandidateA5 hysteresis=10,threshold1=-156,threshold2=-156,timeToTrigger=640",
+         "rsrpCritical hysteresis=10,threshold=-116,timeToTrigger=160",
+         "rsrpCriticalEnabled true",
+         "rsrpSearchZone hysteresis=10,threshold=-156,timeToTrigger=160,timeToTriggerA1=-1",
+         "userLabel ",
+         "end",
+         "else",
+         "GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=N78,McpcPSCellProfileUeCfg=Base rsrpCriticalEnabled true",
+         "GNBCUCPFunction=1,Mcpc=1,McpcPSCellProfile=N78,McpcPSCellProfileUeCfg=Base rsrpCritical hysteresis=10,threshold=-116,timeToTrigger=160",
+         "fi",
+         ""
+      ]
+   },
+   "McpcPCellProfile": {
+      "GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS71": [
+         "pr GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS71",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS71",
+         "rsrpCritical hysteresis=10,threshold=-120,timeToTrigger=160",
+         "rsrpSearchZone hysteresis=10,threshold=-120,timeToTrigger=160",
+         "rsrpCandidateA5 hysteresis=10,threshold1=-120,threshold2=-116",
+         "rsrpCandidateB2 hysteresis=10,threshold1=-120,threshold2EUtra=-120",
+         "rsrpCriticalEnabled true",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS71 rsrpCritical hysteresis=10,threshold=-120,timeToTrigger=160",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS71 rsrpSearchZone hysteresis=10,threshold=-120,timeToTrigger=160",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS71 rsrpCandidateA5 hysteresis=10,threshold1=-120,threshold2=-116",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS71 rsrpCandidateB2 hysteresis=10,threshold1=-120,threshold2EUtra=-120",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS71 rsrpCriticalEnabled true",
+         "fi ",
+         ""
+      ],
+      "GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS66": [
+         "pr GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS66",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS66",
+         "rsrpCritical hysteresis=10,threshold=-120,timeToTrigger=160",
+         "rsrpSearchZone hysteresis=10,threshold=-120,timeToTrigger=160",
+         "rsrpCandidateA5 hysteresis=10,threshold1=-120,threshold2=-116",
+         "rsrpCandidateB2 hysteresis=10,threshold1=-120,threshold2EUtra=-120",
+         "rsrpCriticalEnabled true",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS66 rsrpCritical hysteresis=10,threshold=-120,timeToTrigger=160",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS66 rsrpSearchZone hysteresis=10,threshold=-120,timeToTrigger=160",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS66 rsrpCandidateA5 hysteresis=10,threshold1=-120,threshold2=-116",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS66 rsrpCandidateB2 hysteresis=10,threshold1=-120,threshold2EUtra=-120",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=ESS66 rsrpCriticalEnabled true",
+         "fi ",
+         ""
+      ],
+      "GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N2": [
+         "pr GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N2",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N2",
+         "rsrpCritical hysteresis=10,threshold=-120,timeToTrigger=160",
+         "rsrpSearchZone hysteresis=10,threshold=-120,timeToTrigger=160",
+         "rsrpCandidateA5 hysteresis=10,threshold1=-120,threshold2=-116",
+         "rsrpCandidateB2 hysteresis=10,threshold1=-120,threshold2EUtra=-120",
+         "rsrpCriticalEnabled true",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N2 rsrpCritical hysteresis=10,threshold=-120,timeToTrigger=160",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N2 rsrpSearchZone hysteresis=10,threshold=-120,timeToTrigger=160",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N2 rsrpCandidateA5 hysteresis=10,threshold1=-120,threshold2=-116",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N2 rsrpCandidateB2 hysteresis=10,threshold1=-120,threshold2EUtra=-120",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N2 rsrpCriticalEnabled true",
+         "fi ",
+         ""
+      ],
+      "GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N78": [
+         "pr GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N78",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N78",
+         "rsrpCritical hysteresis=10,threshold=-120,timeToTrigger=160",
+         "rsrpSearchZone hysteresis=10,threshold=-120,timeToTrigger=160",
+         "rsrpCandidateA5 hysteresis=10,threshold1=-120,threshold2=-116",
+         "rsrpCandidateB2 hysteresis=10,threshold1=-120,threshold2EUtra=-120",
+         "rsrpCriticalEnabled true",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N78 rsrpCritical hysteresis=10,threshold=-120,timeToTrigger=160",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N78 rsrpSearchZone hysteresis=10,threshold=-156,timeToTrigger=160",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N78 rsrpCandidateA5 hysteresis=10,threshold1=-120,threshold2=-116",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N78 rsrpCandidateB2 hysteresis=10,threshold1=-120,threshold2EUtra=-120",
+         "set GNBCUCPFunction=1,Mcpc=1,McpcPCellProfile=N78 rsrpCriticalEnabled true",
+         "fi ",
+         ""
+      ]
+   },
+   "mcpcPCellEUtranFreqRelProfile":{
+      "mcpcPCellEUtranFreqRelProfile=L2_650":[
+         "pr mcpcPCellEUtranFreqRelProfile=L2_650",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L2_650",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L2_675":[
+         "pr mcpcPCellEUtranFreqRelProfile=L2_675",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L2_675",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L2_700":[
+         "pr mcpcPCellEUtranFreqRelProfile=L2_700",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L2_700",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L2_703":[
+         "pr mcpcPCellEUtranFreqRelProfile=L2_703",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L2_703",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L2_1024":[
+         "pr mcpcPCellEUtranFreqRelProfile=L2_1024",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L2_1024",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L2_1025":[
+         "pr mcpcPCellEUtranFreqRelProfile=L2_1025",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L2_1025",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L2_1050":[
+         "pr mcpcPCellEUtranFreqRelProfile=L2_1050",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L2_1050",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L2_1075":[
+         "pr mcpcPCellEUtranFreqRelProfile=L2_1075",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L2_1075",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L2_1100":[
+         "pr mcpcPCellEUtranFreqRelProfile=L2_1100",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L2_1100",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L2_1175":[
+         "pr mcpcPCellEUtranFreqRelProfile=L2_1175",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L2_1175",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L4_2000":[
+         "pr mcpcPCellEUtranFreqRelProfile=L4_2000",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L4_2000",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L4_2025":[
+         "pr mcpcPCellEUtranFreqRelProfile=L4_2025",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L4_2025",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L4_2050":[
+         "pr mcpcPCellEUtranFreqRelProfile=L4_2050",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L4_2050",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L4_2100":[
+         "pr mcpcPCellEUtranFreqRelProfile=L4_2100",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L4_2100",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L4_2200":[
+         "pr mcpcPCellEUtranFreqRelProfile=L4_2200",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L4_2200",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L4_2225":[
+         "pr mcpcPCellEUtranFreqRelProfile=L4_2225",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L4_2225",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L4_2350":[
+         "pr mcpcPCellEUtranFreqRelProfile=L4_2350",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L4_2350",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L5_2426":[
+         "pr mcpcPCellEUtranFreqRelProfile=L5_2426",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L5_2426",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L5_2435":[
+         "pr mcpcPCellEUtranFreqRelProfile=L5_2435",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L5_2435",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L5_2436":[
+         "pr mcpcPCellEUtranFreqRelProfile=L5_2436",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L5_2436",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L5_2450":[
+         "pr mcpcPCellEUtranFreqRelProfile=L5_2450",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L5_2450",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L5_2460":[
+         "pr mcpcPCellEUtranFreqRelProfile=L5_2460",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L5_2460",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L5_2585":[
+         "pr mcpcPCellEUtranFreqRelProfile=L5_2585",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L5_2585",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L7_2850":[
+         "pr mcpcPCellEUtranFreqRelProfile=L7_2850",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L7_2850",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L7_2900":[
+         "pr mcpcPCellEUtranFreqRelProfile=L7_2900",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L7_2900",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L7_2950":[
+         "pr mcpcPCellEUtranFreqRelProfile=L7_2950",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L7_2950",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L7_3050":[
+         "pr mcpcPCellEUtranFreqRelProfile=L7_3050",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L7_3050",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L7_3150":[
+         "pr mcpcPCellEUtranFreqRelProfile=L7_3150",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L7_3150",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L7_3200":[
+         "pr mcpcPCellEUtranFreqRelProfile=L7_3200",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L7_3200",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L7_3350":[
+         "pr mcpcPCellEUtranFreqRelProfile=L7_3350",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L7_3350",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L12_5047":[
+         "pr mcpcPCellEUtranFreqRelProfile=L12_5047",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L12_5047",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L12_5060":[
+         "pr mcpcPCellEUtranFreqRelProfile=L12_5060",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L12_5060",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L12_5070":[
+         "pr mcpcPCellEUtranFreqRelProfile=L12_5070",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L12_5070",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L12_5145":[
+         "pr mcpcPCellEUtranFreqRelProfile=L12_5145",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L12_5145",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L13_5205":[
+         "pr mcpcPCellEUtranFreqRelProfile=L13_5205",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L13_5205",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L13_5230":[
+         "pr mcpcPCellEUtranFreqRelProfile=L13_5230",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L13_5230",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L13_5255":[
+         "pr mcpcPCellEUtranFreqRelProfile=L13_5255",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L13_5255",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L17_5765":[
+         "pr mcpcPCellEUtranFreqRelProfile=L17_5765",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L17_5765",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L17_5815":[
+         "pr mcpcPCellEUtranFreqRelProfile=L17_5815",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L17_5815",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L25_8590":[
+         "pr mcpcPCellEUtranFreqRelProfile=L25_8590",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L25_8590",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L25_8615":[
+         "pr mcpcPCellEUtranFreqRelProfile=L25_8615",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L25_8615",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L25_8665":[
+         "pr mcpcPCellEUtranFreqRelProfile=L25_8665",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L25_8665",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L66_66736":[
+         "pr mcpcPCellEUtranFreqRelProfile=L66_66736",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L66_66736",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L66_66961":[
+         "pr mcpcPCellEUtranFreqRelProfile=L66_66961",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L66_66961",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L71_68636":[
+         "pr mcpcPCellEUtranFreqRelProfile=L71_68636",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L71_68636",
+         "end",
+         "fi"
+      ],
+      "mcpcPCellEUtranFreqRelProfile=L71_68686":[
+         "pr mcpcPCellEUtranFreqRelProfile=L71_68686",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,Mcpc=1,McpcPCellEUtranFreqRelProfile=L71_68686",
+         "end",
+         "fi"
+      ]
+   },
+   "IntraFreqMCCellProfile": {
+      "GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=ESS66": [
+         "pr GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=ESS66",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=ESS66",
+         "rsrpBetterSpCell hysteresis=10,offset=30,timeToTrigger=640",
+         "rsrpSCellCoverage hysteresis=10,threshold=-156,timeToTrigger=160",
+         "rsrpBetterSCell hysteresis=10,offset=30,timeToTrigger=160",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=ESS66 rsrpBetterSpCell hysteresis=10,offset=30,timeToTrigger=640",
+         "set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=ESS66 rsrpSCellCoverage hysteresis=10,threshold=-156,timeToTrigger=160",
+         "fi",
+         ""
+      ],
+      "GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=ESS71": [
+         "pr GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=ESS71",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=ESS71",
+         "rsrpBetterSpCell hysteresis=10,offset=30,timeToTrigger=640",
+         "rsrpSCellCoverage hysteresis=10,threshold=-156,timeToTrigger=160",
+         "rsrpBetterSCell hysteresis=10,offset=30,timeToTrigger=160",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=ESS71 rsrpBetterSpCell hysteresis=10,offset=30,timeToTrigger=640",
+         "set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=ESS71 rsrpSCellCoverage hysteresis=10,threshold=-156,timeToTrigger=160",
+         "fi",
+         ""
+      ],
+      "GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=N2": [
+         "pr GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=N2",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=N2",
+         "rsrpBetterSpCell hysteresis=10,offset=30,timeToTrigger=640",
+         "rsrpSCellCoverage hysteresis=10,threshold=-156,timeToTrigger=160",
+         "rsrpBetterSCell hysteresis=10,offset=30,timeToTrigger=160",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=N2 rsrpBetterSpCell hysteresis=10,offset=30,timeToTrigger=640",
+         "set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=N2 rsrpSCellCoverage hysteresis=10,threshold=-156,timeToTrigger=160",
+         "fi",
+         ""
+      ],
+      "GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=N78": [
+         "pr GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=N78",
+         "if $nr_of_mos = 0",
+         "crn GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=N78",
+         "rsrpBetterSpCell hysteresis=10,offset=30,timeToTrigger=640",
+         "rsrpSCellCoverage hysteresis=10,threshold=-156,timeToTrigger=160",
+         "rsrpBetterSCell hysteresis=10,offset=30,timeToTrigger=160",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=N78 rsrpBetterSpCell hysteresis=10,offset=30,timeToTrigger=640",
+         "set GNBCUCPFunction=1,IntraFreqMC=1,IntraFreqMCCellProfile=N78 rsrpSCellCoverage hysteresis=10,threshold=-156,timeToTrigger=160",
+         "fi"
+      ]
+   },
+   "UeMCCellProfile": {
+      "GNBCUCPFunction=1,UeMC=1,UeMCCellProfile=N2": [
+         "pr GNBCUCPFunction=1,UeMC=1,UeMCCellProfile=N2",
+         "if $nr_of_mos = 0 ",
+         "crn GNBCUCPFunction=1,UeMC=1,UeMCCellProfile=N2",
+         "end",
+         "fi",
+         ""
+      ],
+      "GNBCUCPFunction=1,UeMC=1,UeMCCellProfile=N78": [
+         "pr GNBCUCPFunction=1,UeMC=1,UeMCCellProfile=N78",
+         "if $nr_of_mos = 0 ",
+         "crn GNBCUCPFunction=1,UeMC=1,UeMCCellProfile=N78",
+         "end",
+         "fi",
+         ""
+      ],
+      "GNBCUCPFunction=1,UeMC=1,UeMCCellProfile=ESS71": [
+         "pr GNBCUCPFunction=1,UeMC=1,UeMCCellProfile=ESS71",
+         "if $nr_of_mos = 0 ",
+         "crn GNBCUCPFunction=1,UeMC=1,UeMCCellProfile=ESS71",
+         "end",
+         "fi",
+         ""
+      ],
+      "GNBCUCPFunction=1,UeMC=1,UeMCCellProfile=ESS66": [
+         "pr GNBCUCPFunction=1,UeMC=1,UeMCCellProfile=ESS66",
+         "if $nr_of_mos = 0 ",
+         "crn GNBCUCPFunction=1,UeMC=1,UeMCCellProfile=ESS66",
+         "end",
+         "fi"
+      ]
+   },
+   "NR_ueMCNrFreqRelProfile":{
+      "UeMCNrFreqRelProfile=_N2":[
+         "pr GNBCUCPFunction=1,UeMC=1,UeMCNrFreqRelProfile=_N2",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,UeMC=1,UeMCNrFreqRelProfile=_N2",
+         "end",
+         "fi"
+      ],
+      "UeMCNrFreqRelProfile=_ESS71":[
+         "pr GNBCUCPFunction=1,UeMC=1,UeMCNrFreqRelProfile=_ESS71",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,UeMC=1,UeMCNrFreqRelProfile=_ESS71",
+         "end",
+         "fi"
+      ],
+      "UeMCNrFreqRelProfile=_ESS66":[
+         "pr GNBCUCPFunction=1,UeMC=1,UeMCNrFreqRelProfile=_ESS66",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,UeMC=1,UeMCNrFreqRelProfile=_ESS66",
+         "end",
+         "fi"
+      ],
+      "UeMCNrFreqRelProfile=_N66":[
+         "pr GNBCUCPFunction=1,UeMC=1,UeMCNrFreqRelProfile=_N66",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,UeMC=1,UeMCNrFreqRelProfile=_N66",
+         "end",
+         "fi"
+      ],
+      "UeMCNrFreqRelProfile=_N78":[
+         "pr GNBCUCPFunction=1,UeMC=1,UeMCNrFreqRelProfile=_N78",
+         "if $nr_of_mos = 0",
+         "cre GNBCUCPFunction=1,UeMC=1,UeMCNrFreqRelProfile=_N78",
+         "end",
+         "fi"
+      ]
+   },
+   "McfbCellProfile": {
+      "GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=ESS71": [
+         "pr GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=ESS71$",
+         "if $nr_of_mos = 0 ",
+         "crn GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=ESS71",
+         "rsrpCellCandidate hysteresis=10,threshold=-124,timeToTrigger=40",
+         "rsrpCriticalCoverage hysteresis=10,threshold=-124,timeToTrigger=160",
+         "epsFallbackOperation 2",
+         "epsFbTargetSearchTimer 1000",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=ESS71$ rsrpCellCandidate hysteresis=10,threshold=-124,timeToTrigger=40",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=ESS71$ rsrpCriticalCoverage hysteresis=10,threshold=-124,timeToTrigger=160",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=ESS71$ epsFallbackOperation 2",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=ESS71$ epsFbTargetSearchTimer 1000",
+         "fi",
+         ""
+      ],
+      "GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=ESS66": [
+         "pr GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=ESS66",
+         "if $nr_of_mos = 0 ",
+         "crn GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=ESS66",
+         "rsrpCellCandidate hysteresis=10,threshold=-124,timeToTrigger=40",
+         "rsrpCriticalCoverage hysteresis=10,threshold=-124,timeToTrigger=160",
+         "epsFallbackOperation 2",
+         "epsFbTargetSearchTimer 1000",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=ESS66$ rsrpCellCandidate hysteresis=10,threshold=-124,timeToTrigger=40",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=ESS66$ rsrpCriticalCoverage hysteresis=10,threshold=-124,timeToTrigger=160",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=ESS66$ epsFallbackOperation 2",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=ESS66$ epsFbTargetSearchTimer 1000",
+         "fi",
+         ""
+      ],
+      "GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=N2": [
+         "pr GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=N2",
+         "if $nr_of_mos = 0 ",
+         "crn GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=N2",
+         "rsrpCellCandidate hysteresis=10,threshold=-124,timeToTrigger=40",
+         "rsrpCriticalCoverage hysteresis=10,threshold=-124,timeToTrigger=160",
+         "epsFallbackOperation 2",
+         "epsFbTargetSearchTimer 1000",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=N2$ rsrpCellCandidate hysteresis=10,threshold=-124,timeToTrigger=40",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=N2$ rsrpCriticalCoverage hysteresis=10,threshold=-124,timeToTrigger=160",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=N2$ epsFallbackOperation 2",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=N2$ epsFbTargetSearchTimer 1000",
+         "fi",
+         ""
+      ],
+      "GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=N78": [
+         "pr GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=N78$",
+         "if $nr_of_mos = 0 ",
+         "crn GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=N78",
+         "rsrpCellCandidate hysteresis=10,threshold=-124,timeToTrigger=40",
+         "rsrpCriticalCoverage hysteresis=10,threshold=-124,timeToTrigger=160",
+         "epsFallbackOperation 2",
+         "epsFbTargetSearchTimer 1000",
+         "end",
+         "else",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=N78$ rsrpCellCandidate hysteresis=10,threshold=-124,timeToTrigger=40",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=N78$ rsrpCriticalCoverage hysteresis=10,threshold=-124,timeToTrigger=160",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=N78$ epsFallbackOperation 2",
+         "set GNBCUCPFunction=1,Mcfb=1,McfbCellProfile=N78$ epsFbTargetSearchTimer 1000",
+         "fi",
+         ""
+      ]
+   },
+   "NR_UeMCEUtranFreqRelProfile": {
+      "UeMCEUtranFreqRelProfile=_L2": [
+         "pr UeMCEUtranFreqRelProfile=_L2",
+         "if $nr_of_mos = 0",
+         "cr GNBCUCPFunction=1,UeMC=1,UeMCEUtranFreqRelProfile=_L2",
+         "end",
+         "fi"
+      ],
+      "UeMCEUtranFreqRelProfile=_L4": [
+         "pr UeMCEUtranFreqRelProfile=_L4",
+         "if $nr_of_mos = 0",
+         "cr GNBCUCPFunction=1,UeMC=1,UeMCEUtranFreqRelProfile=_L4",
+         "end",
+         "fi"
+      ],
+      "UeMCEUtranFreqRelProfile=_L5": [
+         "pr UeMCEUtranFreqRelProfile=_L5",
+         "if $nr_of_mos = 0",
+         "cr GNBCUCPFunction=1,UeMC=1,UeMCEUtranFreqRelProfile=_L5",
+         "end",
+         "fi"
+      ],
+      "UeMCEUtranFreqRelProfile=_L7": [
+         "pr UeMCEUtranFreqRelProfile=_L7",
+         "if $nr_of_mos = 0",
+         "cr GNBCUCPFunction=1,UeMC=1,UeMCEUtranFreqRelProfile=_L7",
+         "end",
+         "fi"
+      ],
+      "UeMCEUtranFreqRelProfile=_L12": [
+         "pr UeMCEUtranFreqRelProfile=_L12",
+         "if $nr_of_mos = 0",
+         "cr GNBCUCPFunction=1,UeMC=1,UeMCEUtranFreqRelProfile=_L12",
+         "end",
+         "fi"
+      ],
+      "UeMCEUtranFreqRelProfile=_L13": [
+         "pr UeMCEUtranFreqRelProfile=_L13",
+         "if $nr_of_mos = 0",
+         "cr GNBCUCPFunction=1,UeMC=1,UeMCEUtranFreqRelProfile=_L13",
+         "end",
+         "fi"
+      ],
+      "UeMCEUtranFreqRelProfile=_L17": [
+         "pr UeMCEUtranFreqRelProfile=_L17",
+         "if $nr_of_mos = 0",
+         "cr GNBCUCPFunction=1,UeMC=1,UeMCEUtranFreqRelProfile=_L17",
+         "end",
+         "fi"
+      ],
+      "UeMCEUtranFreqRelProfile=_L25": [
+         "pr UeMCEUtranFreqRelProfile=_L25",
+         "if $nr_of_mos = 0",
+         "cr GNBCUCPFunction=1,UeMC=1,UeMCEUtranFreqRelProfile=_L25",
+         "end",
+         "fi"
+      ],
+      "UeMCEUtranFreqRelProfile=_L66": [
+         "pr UeMCEUtranFreqRelProfile=_L66",
+         "if $nr_of_mos = 0",
+         "cr GNBCUCPFunction=1,UeMC=1,UeMCEUtranFreqRelProfile=_L66",
+         "end",
+         "fi"
+      ],
+      "UeMCEUtranFreqRelProfile=_L38": [
+         "pr UeMCEUtranFreqRelProfile=_L38",
+         "if $nr_of_mos = 0",
+         "cr GNBCUCPFunction=1,UeMC=1,UeMCEUtranFreqRelProfile=_L38",
+         "end",
+         "fi"
+      ],
+      "UeMCEUtranFreqRelProfile=_L71": [
+         "pr UeMCEUtranFreqRelProfile=_L71",
+         "if $nr_of_mos = 0",
+         "cr GNBCUCPFunction=1,UeMC=1,UeMCEUtranFreqRelProfile=_L71",
+         "end",
+         "fi"
+      ]
+   }
+}
