@@ -1,4 +1,4 @@
-[![Version](https://img.shields.io/github/v/release/faisalri/json_modef/?color=%230567ff&label=Latest%20Release&style=for-the-badge)](https://github.com/faisalri/json_modef//releases)
+[![Version](https://img.shields.io/github/v/release/faisalri/json_modef?color=%230567ff&label=Latest%20Release&style=for-the-badge)](https://github.com/faisalri/json_modef//releases)
 
 # json_modef
 json_modef for [SRTCLICKY](https://github.com/endang-ismaya/IRS-YPN/releases/tag/srt_clicky_v020)
